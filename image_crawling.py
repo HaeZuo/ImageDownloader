@@ -55,7 +55,11 @@ def crawlImages(search, count, saveurl):
     i = 0
 
     while True:
-        try: 
+        if len(images) < i-1:
+            print(search, "검색어에 대한 결과가 부족합니다.")
+            break
+            
+        try:
             images[i].click() # Image Click
             time.sleep(1)
 
