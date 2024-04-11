@@ -55,7 +55,7 @@ def crawlImages(search, count, saveurl):
     i = 0
 
     while True:
-        if len(images) < i-1:
+        if len(images) - 1 < i:
             print(search, "검색어에 대한 결과가 부족합니다.")
             break
             
